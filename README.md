@@ -93,3 +93,11 @@ Based on the current [monitoring](edge_sim_py/monitoring.py) code, various detai
 In addition, the current [monitoring](edge_sim_py/monitoring.py) provides details about each service, including its ID, availability status, associated application ID, the ID of the hosting edge-server, and migration status.
 
 Finally, the current [monitoring](edge_sim_py/monitoring.py) prints `'m' out of 'M' services are experienced failures (missed/lost/failed), potentially affecting 'n' of the 'N' users.`
+
+## Citation
+If you found this code or our work useful, please cite it as:
+
+
+```bibtex
+TBD
+```
