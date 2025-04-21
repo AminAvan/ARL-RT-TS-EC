@@ -1,0 +1,202 @@
+Results:
+9 out of 262 services are successfully scheduled.
+runtime: 0.30 seconds
+memory consumption: 296.91 MB until 0.30 seconds
+power consumption: 18.40 Watt-seconds until 0.30 seconds
+
+41 out of 262 services are successfully scheduled.
+runtime: 1.25 seconds
+memory consumption: 1190.30 MB until 1.25 seconds
+power consumption: 75.00 Watt-seconds until 1.25 seconds
+
+67 out of 262 services are successfully scheduled.
+runtime: 30.82 seconds
+memory consumption: 30197.46 MB until 30.82 seconds
+power consumption: 1664.00 Watt-seconds until 30.82 seconds
+
+100 out of 262 services are successfully scheduled.
+runtime: 31.13 seconds
+memory consumption: 30541.07 MB until 31.13 seconds
+power consumption: 1679.60 Watt-seconds until 31.13 seconds
+
+130 out of 262 services are successfully scheduled.
+runtime: 35.46 seconds
+memory consumption: 35059.11 MB until 35.46 seconds
+power consumption: 1896.40 Watt-seconds until 35.46 seconds
+
+142 out of 262 services are successfully scheduled.
+runtime: 38.71 seconds
+memory consumption: 38249.70 MB until 38.71 seconds
+power consumption: 2049.40 Watt-seconds until 38.71 seconds
+
+172 out of 262 services are successfully scheduled.
+runtime: 43.17 seconds
+memory consumption: 42952.39 MB until 43.17 seconds
+power consumption: 2284.40 Watt-seconds until 43.17 seconds
+
+187 out of 262 services are successfully scheduled.
+runtime: 45.41 seconds
+memory consumption: 45530.04 MB until 45.41 seconds
+power consumption: 2413.20 Watt-seconds until 45.41 seconds
+
+188 out of 262 services are successfully scheduled.
+runtime: 61.14 seconds
+memory consumption: 63716.48 MB until 61.14 seconds
+power consumption: 3230.40 Watt-seconds until 61.14 seconds
+
+190 out of 262 services are successfully scheduled.
+runtime: 61.43 seconds
+memory consumption: 64123.62 MB until 61.43 seconds
+power consumption: 3261.40 Watt-seconds until 61.43 seconds
+
+191 out of 262 services are successfully scheduled.
+runtime: 65.37 seconds
+memory consumption: 69068.22 MB until 65.37 seconds
+power consumption: 3465.40 Watt-seconds until 65.37 seconds
+
+197 out of 262 services are successfully scheduled.
+runtime: 99.60 seconds
+memory consumption: 112258.72 MB until 99.60 seconds
+power consumption: 5084.40 Watt-seconds until 99.60 seconds
+
+Total runtime: 99.91 seconds
+Total memory consumption: 112258.72 MB
+Total power consumption: 5084.40 Watt-seconds
+
+Process finished with exit code 0
+
+
+D:\PycharmProjects\RL_in_EdgeSimPy\.venv\Scripts\python.exe D:\PycharmProjects\RL_in_EdgeSimPy\edge_sim_py\__main__.py 
+9 out of 262 services are successfully scheduled.
+runtime: 0.32 seconds
+memory consumption: 298.01 MB until 0.32 seconds
+power consumption: 17.00 Watt-seconds until 0.32 seconds
+
+41 out of 262 services are successfully scheduled.
+runtime: 1.23 seconds
+memory consumption: 1194.77 MB until 1.23 seconds
+power consumption: 72.20 Watt-seconds until 1.23 seconds
+
+67 out of 262 services are successfully scheduled.
+runtime: 31.54 seconds
+memory consumption: 30276.26 MB until 31.54 seconds
+power consumption: 1622.00 Watt-seconds until 31.54 seconds
+
+100 out of 262 services are successfully scheduled.
+runtime: 31.85 seconds
+memory consumption: 30620.79 MB until 31.85 seconds
+power consumption: 1639.00 Watt-seconds until 31.85 seconds
+
+130 out of 262 services are successfully scheduled.
+runtime: 36.11 seconds
+memory consumption: 35150.73 MB until 36.11 seconds
+power consumption: 1867.00 Watt-seconds until 36.11 seconds
+
+142 out of 262 services are successfully scheduled.
+runtime: 39.11 seconds
+memory consumption: 38349.77 MB until 39.11 seconds
+power consumption: 2031.20 Watt-seconds until 39.11 seconds
+
+172 out of 262 services are successfully scheduled.
+runtime: 43.64 seconds
+memory consumption: 43065.51 MB until 43.64 seconds
+power consumption: 2257.80 Watt-seconds until 43.64 seconds
+
+187 out of 262 services are successfully scheduled.
+runtime: 46.09 seconds
+memory consumption: 45650.44 MB until 46.09 seconds
+power consumption: 2389.40 Watt-seconds until 46.09 seconds
+
+188 out of 262 services are successfully scheduled.
+runtime: 62.51 seconds
+memory consumption: 63907.84 MB until 62.51 seconds
+power consumption: 3182.80 Watt-seconds until 62.51 seconds
+
+190 out of 262 services are successfully scheduled.
+runtime: 62.81 seconds
+memory consumption: 64316.30 MB until 62.81 seconds
+power consumption: 3211.00 Watt-seconds until 62.81 seconds
+
+191 out of 262 services are successfully scheduled.
+runtime: 66.74 seconds
+memory consumption: 69278.29 MB until 66.74 seconds
+power consumption: 3431.80 Watt-seconds until 66.74 seconds
+
+197 out of 262 services are successfully scheduled.
+runtime: 100.47 seconds
+memory consumption: 112638.70 MB until 100.47 seconds
+power consumption: 5074.60 Watt-seconds until 100.47 seconds
+
+Total runtime: 100.74 seconds
+Total memory consumption: 112638.70 MB
+Total power consumption: 5074.60 Watt-seconds
+
+Process finished with exit code 0
+
+
+D:\PycharmProjects\RL_in_EdgeSimPy\.venv\Scripts\python.exe D:\PycharmProjects\RL_in_EdgeSimPy\edge_sim_py\__main__.py 
+9 out of 262 services are successfully scheduled.
+runtime: 0.31 seconds
+memory consumption: 297.25 MB until 0.31 seconds
+power consumption: 19.80 Watt-seconds until 0.31 seconds
+
+41 out of 262 services are successfully scheduled.
+runtime: 1.25 seconds
+memory consumption: 1192.00 MB until 1.25 seconds
+power consumption: 73.60 Watt-seconds until 1.25 seconds
+
+67 out of 262 services are successfully scheduled.
+runtime: 31.11 seconds
+memory consumption: 30234.05 MB until 31.11 seconds
+power consumption: 1655.60 Watt-seconds until 31.11 seconds
+
+100 out of 262 services are successfully scheduled.
+runtime: 31.42 seconds
+memory consumption: 30578.29 MB until 31.42 seconds
+power consumption: 1676.80 Watt-seconds until 31.42 seconds
+
+130 out of 262 services are successfully scheduled.
+runtime: 35.82 seconds
+memory consumption: 35106.16 MB until 35.82 seconds
+power consumption: 1904.80 Watt-seconds until 35.82 seconds
+
+142 out of 262 services are successfully scheduled.
+runtime: 38.84 seconds
+memory consumption: 38303.12 MB until 38.84 seconds
+power consumption: 2059.20 Watt-seconds until 38.84 seconds
+
+172 out of 262 services are successfully scheduled.
+runtime: 43.52 seconds
+memory consumption: 43015.67 MB until 43.52 seconds
+power consumption: 2291.40 Watt-seconds until 43.52 seconds
+
+187 out of 262 services are successfully scheduled.
+runtime: 45.78 seconds
+memory consumption: 45598.48 MB until 45.78 seconds
+power consumption: 2420.20 Watt-seconds until 45.78 seconds
+
+188 out of 262 services are successfully scheduled.
+runtime: 62.47 seconds
+memory consumption: 63814.67 MB until 62.47 seconds
+power consumption: 3196.80 Watt-seconds until 62.47 seconds
+
+190 out of 262 services are successfully scheduled.
+runtime: 62.78 seconds
+memory consumption: 64221.99 MB until 62.78 seconds
+power consumption: 3215.20 Watt-seconds until 62.78 seconds
+
+191 out of 262 services are successfully scheduled.
+runtime: 67.09 seconds
+memory consumption: 69171.82 MB until 67.09 seconds
+power consumption: 3437.40 Watt-seconds until 67.09 seconds
+
+197 out of 262 services are successfully scheduled.
+runtime: 101.64 seconds
+memory consumption: 112418.87 MB until 101.64 seconds
+power consumption: 5066.20 Watt-seconds until 101.64 seconds
+
+Total runtime: 101.92 seconds
+Total memory consumption: 112418.87 MB
+Total power consumption: 5066.20 Watt-seconds
+
+Process finished with exit code 0

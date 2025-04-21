@@ -1,0 +1,47 @@
+body {
+    font-family: "Inter", system-ui, -apple-system;
+}
+.navbar-custom {
+    margin-bottom: 4rem;
+    background-color: transparent;
+}
+.icon-bar {
+    background-color: white;
+}
+.nav-link {
+    color: white;
+    font-weight: 600;
+}
+.navbar-brand {
+    color: white;
+    font-weight: 900;
+}
+.navbar-brand:hover, .nav-item:hover {
+    background-color: transparent;
+    color: #E8EEEF;
+}
+.dropdown-item:hover {
+    color: #124750;
+}
+
+.button-primary {
+    background-color: #38B2AC;
+    border-radius: 4px;
+    color: white;
+    transition: 0.3s ease-in-out;
+    
+}
+.button-primary:hover {
+    background-color: #63c8c3;
+    color: white;
+}
+.button-secondary {
+    background-color: #717171;
+    border-radius: 4px;
+    color: white;
+    transition: 0.3s ease-in-out;   
+}
+.button-secondary:hover {
+    background-color: #bfbfbf;
+    color: #0F0F0F;
+}
