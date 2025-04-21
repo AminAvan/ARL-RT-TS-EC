@@ -99,5 +99,8 @@ If you found this code or our work useful, please cite it as:
 
 
 ```bibtex
-TBD
+-- TBD --
+The 38th Canadian Conference on Artificial Intelligence (Canadian AI 2025)
+[CAIAC 2025] will take place in-person at the University of Calgary
+from Monday to Thursday, May 26th to 29th, 2025.
 ```
