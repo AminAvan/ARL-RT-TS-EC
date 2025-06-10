@@ -1,9 +1,26 @@
 
 ---
-# Overview
+# Overview of aRL
+Task scheduling for soft real-time applications in edge computing presents significant challenges due to dynamic environments, large search spaces, and multiple conflicting objectives. Traditional heuristic & metaheuristic task schedulers often struggle to adapt to these conditions, motivating the adoption of reinforcement learning (RL). However, RL is often hindered by prolonged training times, primarily due to extensive exploration of irrelevant actions.
+
+This GitHub repository provides the implementation of Agile Reinforcement Learning (aRL), an enhanced reinforcement learning approach that integrates informed exploration and action masking to prioritize relevant actions. These improvements enhance predictability, accelerate adaptation, and facilitate faster convergence.
+
+Please find the aRL slides [here](CanadianAI2025_AminAvan.pptx), and aRL paper [here](https://caiac.pubpub.org/pub/xvm5a604).
+
 The original repository of EdgeSimPy can be found [here](https://github.com/EdgeSimPy/EdgeSimPy). We have added features to the original source code, developing it into a framework for testing and experimenting with scheduling algorithms for real-time applications in edge computing.
 
+---
+# Agile reinforcement learning (aRL)
+The primary objective is to minimize the runtime of the task scheduling algorithm when generating the task schedule while maximizing the hit-ratio of the resulting task schedule. Consequently, the task scheduling problem is formulated as an MDP, in which an action is represented as a two-element list, with the first element denoting the task and the second element representing the edge server.
 
+An RL-agent receives positive rewards to satisfy each of the constraints, and negative rewards for each violation. Accordingly, the objective of the RL-agent is to identify a policy that maximizes cumulative rewards. aRL employs informed exploration and action masking to accelerate learning and reduce learning time.
+
+
+* Action Masking: A decision matrix (G), defined in Eq. (4.2), tracks the assignment decisions of the RL-agent during each episode of the learning phase. At the beginning of each episode, all cells in the decision matrix (G) are initialized to '0'. When the RL-agent decides to assign a specific task to a particular edge server, the corresponding cell is updated to '1'. In decision matrix (G), columns represent edge servers and rows denote tasks.
+  * 1st mechanism to mask the actions of RL-agent and facilitate the execution of relevant actions, an `action bound' inspired by a finite-horizon concept is introduced. Under the action bound, the number of actions per episode is limited by the total number of tasks. This restriction mitigates excessively long rollouts and ensures that each episode terminates within a specified timeframe, thereby enabling more reliable policy and value function updates. Therefore, an episode terminates either when the total number of actions equals the total number of tasks or when all tasks are assigned to edge servers while satisfying the constraints.
+  * 2nd mechanism, referred to as the `single-assignment constraint', restricts the RL-agent to one assignment decision per task. After each action in an episode, the total number of possible actions (i.e., unassigned tasks) decreases, thereby reducing the state-action space over the course of the episode. In addition, the single-assignment constraint prevents the RL-agent from reassigning tasks that have already been assigned and directs its focus to the set of unassigned tasks.
+* Informed Exploration: In exploration mode, aRL explores the action-state space using a modified version of the Earliest Deadline First (EDF) algorithm, adapted for edge computing, rather than relying solely on random exploration. As a result, aRL selects a task with the earliest deadline among unassigned tasks to be assigned to an available edge server subject to the conditions specified in Eqs. (3.11) and (3.17).
+---
 ## Required Packages
 All packages required by EdgeSimPy are listed in the [pyproject.toml](pyproject.toml) file, which should be installed using [Poetry](https://python-poetry.org/) in Python.
 
@@ -93,14 +110,3 @@ Based on the current [monitoring](edge_sim_py/monitoring.py) code, various detai
 In addition, the current [monitoring](edge_sim_py/monitoring.py) provides details about each service, including its ID, availability status, associated application ID, the ID of the hosting edge-server, and migration status.
 
 Finally, the current [monitoring](edge_sim_py/monitoring.py) prints `'m' out of 'M' services are experienced failures (missed/lost/failed), potentially affecting 'n' of the 'N' users.`
-
-## Citation
-If you found this code or our work useful, please cite it as:
-
-
-```bibtex
--- TBD --
-The 38th Canadian Conference on Artificial Intelligence (Canadian AI 2025)
-[CAIAC 2025] will take place in-person at the University of Calgary
-from Monday to Thursday, May 26th to 29th, 2025.
-```
