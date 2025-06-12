@@ -110,3 +110,20 @@ Based on the current [monitoring](edge_sim_py/monitoring.py) code, various detai
 In addition, the current [monitoring](edge_sim_py/monitoring.py) provides details about each service, including its ID, availability status, associated application ID, the ID of the hosting edge-server, and migration status.
 
 Finally, the current [monitoring](edge_sim_py/monitoring.py) prints `'m' out of 'M' services are experienced failures (missed/lost/failed), potentially affecting 'n' of the 'N' users.`
+
+
+## Citation
+If you found this code or our work useful, please cite it as:
+
+
+```bibtex
+@misc{avan2025agilereinforcementlearningrealtime,
+      title={Agile Reinforcement Learning for Real-Time Task Scheduling in Edge Computing}, 
+      author={Amin Avan and Akramul Azim and Qusay Mahmoud},
+      year={2025},
+      eprint={2506.08850},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.08850}, 
+}
+```
