@@ -9,7 +9,6 @@ Please find the aRL slides [here](CanadianAI2025_AminAvan.pptx), and aRL paper [
 
 The original repository of EdgeSimPy can be found [here](https://github.com/EdgeSimPy/EdgeSimPy). We have added features to the original source code, developing it into a framework for testing and experimenting with scheduling algorithms for real-time applications in edge computing.
 
----
 ## Agile reinforcement learning (aRL)
 The primary objective is to minimize the runtime of the task scheduling algorithm when generating the task schedule while maximizing the hit-ratio of the resulting task schedule. Consequently, the task scheduling problem is formulated as an MDP, in which an action is represented as a two-element list, with the first element denoting the task and the second element representing the edge server.
 
