@@ -1,6 +1,6 @@
+# Agile Reinforcement Learning for Real-Time Task Scheduling in Edge Computing (CAIAC 2025)
 
----
-# Overview of aRL
+## Overview of aRL
 Task scheduling for soft real-time applications in edge computing presents significant challenges due to dynamic environments, large search spaces, and multiple conflicting objectives. Traditional heuristic & metaheuristic task schedulers often struggle to adapt to these conditions, motivating the adoption of reinforcement learning (RL). However, RL is often hindered by prolonged training times, primarily due to extensive exploration of irrelevant actions.
 
 This GitHub repository provides the implementation of Agile Reinforcement Learning (aRL), an enhanced reinforcement learning approach that integrates informed exploration and action masking to prioritize relevant actions. These improvements enhance predictability, accelerate adaptation, and facilitate faster convergence.
@@ -10,7 +10,7 @@ Please find the aRL slides [here](CanadianAI2025_AminAvan.pptx), and aRL paper [
 The original repository of EdgeSimPy can be found [here](https://github.com/EdgeSimPy/EdgeSimPy). We have added features to the original source code, developing it into a framework for testing and experimenting with scheduling algorithms for real-time applications in edge computing.
 
 ---
-# Agile reinforcement learning (aRL)
+## Agile reinforcement learning (aRL)
 The primary objective is to minimize the runtime of the task scheduling algorithm when generating the task schedule while maximizing the hit-ratio of the resulting task schedule. Consequently, the task scheduling problem is formulated as an MDP, in which an action is represented as a two-element list, with the first element denoting the task and the second element representing the edge server.
 
 An RL-agent receives positive rewards to satisfy each of the constraints, and negative rewards for each violation. Accordingly, the objective of the RL-agent is to identify a policy that maximizes cumulative rewards. aRL employs informed exploration and action masking to accelerate learning and reduce learning time.
@@ -21,10 +21,10 @@ An RL-agent receives positive rewards to satisfy each of the constraints, and ne
   * 2nd mechanism, referred to as the `single-assignment constraint', restricts the RL-agent to one assignment decision per task. After each action in an episode, the total number of possible actions (i.e., unassigned tasks) decreases, thereby reducing the state-action space over the course of the episode. In addition, the single-assignment constraint prevents the RL-agent from reassigning tasks that have already been assigned and directs its focus to the set of unassigned tasks.
 * Informed Exploration: In exploration mode, aRL explores the action-state space using a modified version of the Earliest Deadline First (EDF) algorithm, adapted for edge computing, rather than relying solely on random exploration. As a result, aRL selects a task with the earliest deadline among unassigned tasks to be assigned to an available edge server subject to the conditions specified in Eqs. (3.11) and (3.17).
 ---
-## Required Packages
+### Required Packages
 All packages required by EdgeSimPy are listed in the [pyproject.toml](pyproject.toml) file, which should be installed using [Poetry](https://python-poetry.org/) in Python.
 
-## Build Instructions
+### Build Instructions
 Assuming you have already installed a recent version of [Poetry](https://python-poetry.org/) ([how to install](https://python-poetry.org/docs/)) and your Python version is ```3.10.x```, you can install the required packages for EdgeSimPy using the following command:
 ```bash
 poetry install
@@ -33,7 +33,7 @@ poetry shell
 After completing the above step, you need to change the 'Python Interpreter' in your IDE to point to the 'Poetry Environment' location. The path was output by `poetry shell`, and you need to append `\Scripts\python.exe` to the end, resulting in a path like `[output from poetry shell]\Scripts\python.exe`.
 
 
-## Selecting & Running Scheduling Algorithms
+### Selecting & Running Scheduling Algorithms
 In the [main](edge_sim_py/__main__.py) file, the `algorithm_functions` function poses all available scheduling algorithms. Set your preferred algorithm name as the value of the `scheduling_algorithm` variable, located just after this function.
 
 After selecting your preferred scheduling algorithm, run [main](edge_sim_py/__main__.py). While the file is running, the following information will be printed regularly as an online report of the scheduling process until completion.
@@ -53,8 +53,8 @@ Total runtime: '...' seconds
 Total memory consumption: '...' MB
 Total power consumption: '...' Watt-seconds
 ```
-
-## Dataset
+---
+### Dataset
 We modify & introduce new parameters in the [dataset generator](edge_sim_py/dataset_generator/create_dataset.py) to generate a dataset incorporating real-time parameters specific to the services within edge user applications.
 
 This [dataset](edge_sim_py/dataset_generator/datasets/dataset1.json) simulates a video surveillance scenario with four applications:
@@ -101,8 +101,7 @@ Services of 52 edge users: 262
 		[Low Sensitivity]: 2734 (6.06%)
 ```
 
-## Monitoring
-
+### Monitoring
 We can monitor the entity's state at the end of each time step of EdgeSimPy using [monitoring](edge_sim_py/monitoring.py). Simulation logs are stored in MessagePack, and you can customize which entity metrics are monitored at each time step by overriding the entity's `collect()` method.
 
 Based on the current [monitoring](edge_sim_py/monitoring.py) code, various details about each edge server can be obtained, including its coordinates, its availability, RAM capacity, disk capacity, processor demand (based on cycles demand), memory demand, storage demand, and the IDs of services hosted on the server.
@@ -111,11 +110,9 @@ In addition, the current [monitoring](edge_sim_py/monitoring.py) provides detail
 
 Finally, the current [monitoring](edge_sim_py/monitoring.py) prints `'m' out of 'M' services are experienced failures (missed/lost/failed), potentially affecting 'n' of the 'N' users.`
 
-
-## Citation
+---
+### Citation
 If you found this code or our work useful, please cite it as:
-
-
 ```bibtex
 @misc{avan2025agilereinforcementlearningrealtime,
       title={Agile Reinforcement Learning for Real-Time Task Scheduling in Edge Computing}, 
