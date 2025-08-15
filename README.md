@@ -113,10 +113,13 @@ Finally, the current [monitoring](edge_sim_py/monitoring.py) prints `'m' out of 
 ### Citation
 If you found this code or our work useful, please cite it as:
 ```bibtex
-@article{avan2025agile,
-  title={Agile Reinforcement Learning for Real-Time Task Scheduling in Edge Computing},
-  author={Avan, Amin and Azim, Akramul and Mahmoud, Qusay},
-  journal={arXiv preprint arXiv:2506.08850},
-  year={2025}
+@article{Avan2025Agile,
+	author = {Avan, Amin and Azim, Akramul and Mahmoud, Qusay},
+	journal = {Proceedings of the Canadian Conference on Artificial Intelligence},
+	year = {2025},
+	month = {may 19},
+	note = {https://caiac.pubpub.org/pub/xvm5a604},
+	publisher = {Canadian Artificial Intelligence Association (CAIAC)},
+	title = {Agile {Reinforcement} {Learning} for {Real}-{Time} {Task} {Scheduling} in {Edge} {Computing}},
 }
 ```
