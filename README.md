@@ -1,11 +1,13 @@
 # Agile Reinforcement Learning for Real-Time Task Scheduling in Edge Computing (CAIAC 2025)
 
+> **The full paper is accessible [here](https://caiac.pubpub.org/pub/xvm5a604)**
+
+> **The presenation file is accessible [here](./SLIDES_Agile%20Reinforcement%20Learning%20for%20Real-Time%20Task%20Scheduling%20in%20Edge%20Computing.pdf)**
+
 ## Overview of aRL
 Task scheduling for soft real-time applications in edge computing presents significant challenges due to dynamic environments, large search spaces, and multiple conflicting objectives. Traditional heuristic & metaheuristic task schedulers often struggle to adapt to these conditions, motivating the adoption of reinforcement learning (RL). However, RL is often hindered by prolonged training times, primarily due to extensive exploration of irrelevant actions.
 
 This GitHub repository provides the implementation of Agile Reinforcement Learning (aRL), an enhanced reinforcement learning approach that integrates informed exploration and action masking to prioritize relevant actions. These improvements enhance predictability, accelerate adaptation, and facilitate faster convergence.
-
-Please find the aRL slides [here](CanadianAI2025_AminAvan.pptx), and aRL paper [here](https://caiac.pubpub.org/pub/xvm5a604).
 
 The original repository of EdgeSimPy can be found [here](https://github.com/EdgeSimPy/EdgeSimPy). We have added features to the original source code, developing it into a framework for testing and experimenting with scheduling algorithms for real-time applications in edge computing.
 
