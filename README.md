@@ -1,6 +1,6 @@
 # Agile Reinforcement Learning for Real-Time Task Scheduling in Edge Computing (CAIAC 2025)
 
-> **The full paper is accessible [here](https://caiac.pubpub.org/pub/xvm5a604)**
+> **The full paper is accessible [here](https://doi.org/10.21428/594757db.04c430fb)**
 
 > **The presenation file is accessible [here](./SLIDES_Agile%20Reinforcement%20Learning%20for%20Real-Time%20Task%20Scheduling%20in%20Edge%20Computing.pdf)**
 
